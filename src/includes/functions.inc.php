@@ -465,7 +465,7 @@ function psm_update_available() {
  * @return \PHPMailer
  */
 function psm_build_mail($from_name = null, $from_email = null) {
-	$phpmailer = new \PHPMailer();
+	$phpmailer = new \PHPMailer\PHPMailer\PHPMailer();
 	$phpmailer->Encoding = "base64";
 	$phpmailer->CharSet = 'UTF-8';
 	$phpmailer->SMTPDebug = false;
